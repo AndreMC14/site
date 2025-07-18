@@ -22,7 +22,6 @@
     height: auto;
     z-index: 10;
   }
-
   .menu-interativo.ativo {
     display: block;
   }
@@ -94,31 +93,21 @@
     font-size: 18px;
   }
 
-  #certificados {
-    border-radius: 20px;
-  }
 
-  #ecosanta {
-    border-radius: 20px;
-  }
 
-  #senacfoto {
-    border-radius: 20px;
-  }
-
-  #mobile-nav-menu-items {
-    display: none;
-    flex-direction: column;
-    background: white;
-    padding: 10px;
+#certificados, #ecosanta, #senacfoto {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
-
-
-.mobileMenuActive {
-    display: flex !important;
-}
-
-
-.mobileMenuInactive {
-    display: none !important;
+@media (max-width: 768px) {
+  .imagem-circular {
+    width: 120px;
+    height: 120px;
+    margin-left: 0;
+  }
+  #certificados, #ecosanta, #senacfoto {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }

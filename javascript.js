@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Botão Página Principal
+    
     const botaoPaginaPrincipal = document.getElementById("btn-pagina-principal");
     if (botaoPaginaPrincipal) {
         botaoPaginaPrincipal.addEventListener("click", function (e) {
@@ -41,19 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Menu mobile
-    const btn = document.getElementById('mobile-menu-button');
-    const menu = document.getElementById('mobile-nav-menu-items');
 
-    if (btn && menu) {
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('mobileMenuActive');
-            menu.classList.toggle('mobileMenuInactive');
-        });
-    }
+    
 });
 
-// Mostrar/ocultar telefone
+
 function alternarContato() {
     const telefone = document.getElementById("telefone");
     if (telefone) {
