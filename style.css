@@ -1,0 +1,107 @@
+.container-fluid.d-flex {
+
+  display: flex;
+  flex-direction: column;
+}
+.menu-interativo {
+    width: 300px;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, #0237e6, rgb(34, 221, 212));
+}
+
+
+
+@media (max-width: 768px) {
+  .menu-interativo {
+    display: none;
+    width: 100%;
+    position: relative;
+    height: auto;
+    z-index: 10;
+  }
+
+  .menu-interativo.ativo {
+    display: block;
+  }
+}
+
+  .menu-interativo.ativo {
+    display: block;
+  }
+
+
+.btn-light {
+    width: 250px;
+}
+
+.imagem-circular {
+     width: 150px;       
+    height: 150px;     
+    object-fit: cover;  
+    border-radius: 50%; 
+    margin-left: 60px;
+}
+
+@keyframes sairDeBaixo {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+@keyframes entrarDeCima {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animar-saida {
+    animation: sairDeBaixo 0.5s forwards;
+}
+
+.animar-entrada {
+    animation: entrarDeCima 0.5s forwards;
+}
+
+#conteudo-principal {
+    margin-left: 300px;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  #conteudo-principal {
+    margin-left: 0;
+  }
+}
+
+  #telefone {
+    margin-top: 10px;
+    font-weight: bold;
+    color:white;
+    font-size: 18px;
+  }
+
+  #certificados {
+    border-radius: 20px;
+  }
+
+  #ecosanta {
+    border-radius: 20px;
+  }
+
+  #senacfoto {
+    border-radius: 20px;
+  }

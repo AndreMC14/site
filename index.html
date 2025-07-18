@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site pessoal André Medeiros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <button class="btn btn-primary d-md-none m-2" id="btn-menu-toggle">
+  ☰ Menu
+</button>
+    <div class="container-fluid d-flex">
+        <div class="row w-100">
+            <div class="col-md-2 menu-interativo d-flex flex-column justify-content-between align-items-start p-3">
+                <img src="20250603_210605.jpg" class="imagem-circular" height="300px" height="200px" alt="foto André">
+
+
+                <div class="text-white d-flex flex-column gap-2 texto-menu">
+                    <a href="#" id="btn-pagina-principal" class="text-white text-decoration-none h3 py-2">PÁGINA
+                        PRINCIPAL</a>
+                    <a href="#" class="text-white text-decoration-none h3 py-2"
+                        data-secao="curriculo.html">CURRÍCULO</a>
+                    <a href="#" class="text-white text-decoration-none h3 py-2" data-secao="idiomas.html">IDIOMAS</a>
+                    <a href="#" class="text-white text-decoration-none h3 py-2"
+                        data-secao="portfolio.html">PORTFOLIO</a>
+
+
+                </div>
+                <div class="list-group py-3 text-white">
+                    <div class=" d-flex align-items-center">
+                        <i class="bi bi-person-fill me-3"></i>
+                        André Medeiros Corrêa
+                    </div>
+
+                    <div class=" d-flex align-items-center">
+                        <i class="bi bi-envelope-fill me-3"></i>
+                        andretangerina03@gmail.com
+                    </div>
+
+                    <div class=" d-flex align-items-center">
+                        <i class="bi bi-geo-alt-fill me-3"></i>
+                        Lages/SC - Brasil
+                    </div>
+
+                    <div class=" d-flex align-items-center">
+                        <i class="bi bi-pencil-fill me-3"></i>
+                        IFSC - Câmpus Lages
+                    </div>
+
+                    <div class=" d-flex align-items-center">
+                        <i class="bi bi-github me-3"></i>
+                        AndreMC14
+                    </div>
+
+                    <div class=" d-flex align-items-center">
+                        <i class="bi bi-instagram me-3"></i>
+                        andremc1402
+                    </div>
+                </div>
+                <button onclick="alternarContato()" class="justify-content-between btn btn-light mt-3">Contato</button>
+                <p id="telefone" style="display: none;">(49) 99800-9767</p>
+
+            </div>
+           <div class="col-md-10 p-4" id="conteudo-principal">
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3 class="card-title text-black">Apresentação</h3>
+            <p class="card-text">
+                Olá! Meu nome é André Medeiros Corrêa, sou de Lages SC, tenho 18 anos, sou estudante de Ciência da Computação no IFSC, gosto de aprender sobre programação e coisas novas. <br>
+                Atualmente focado no estudo e em games.
+            </p>
+        </div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+
+            <h3 class="card-title text-black">Áreas de interesse</h3>
+            <ul class="card-text">
+                <li>Programação back-end</li>
+                        <p>
+                           Java e C#
+                        </p>
+                        <img src="javacode.jpg" weidth="500px" height="200px" alt="codigo em java" class="img-fluid">
+                <li class="py-2">Programação front-end</li>
+                <p>
+                    HTML e CSS
+                </p>
+                <img src="htmlcode.jpg" weidth="500px" height="200px" alt="código em html" class="img-fluid">
+
+             
+                    </div>
+                    <div class="col-md-6">
+                        
+                        <ul class="card-text py-5">
+                
+                            <li>Banco de dados</li>
+                            <p>
+                                MySql
+                            </p>
+                            <img src="sqlDiagrama.jpg" weidth="300px" height="400px" alt="Diagrama SQL" class="img-fluid">
+            </ul>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+
+
+</html>
