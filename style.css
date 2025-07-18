@@ -105,3 +105,20 @@
   #senacfoto {
     border-radius: 20px;
   }
+
+  #mobile-nav-menu-items {
+    display: none;
+    flex-direction: column;
+    background: white;
+    padding: 10px;
+}
+
+
+.mobileMenuActive {
+    display: flex !important;
+}
+
+
+.mobileMenuInactive {
+    display: none !important;
+}
